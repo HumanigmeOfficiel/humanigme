@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Corentin Aubé"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta 
+	      name="description" 
+	      content="Sur Humanigme, résolver des énigmes en explorant les connaissances de l'humanité, les mystères de la nature, les mythes et légendes et tant d'autres choses encore !"
+	 	>
+	    <link rel="shortcut icon" href="img/logo_web_icone.svg" type="image/x-icon" />
+	    <link rel="stylesheet" href="styles.css" />
+	    <script src="script.js" defer></script>
+		<title>Humanigme</title>
+	</head>
+	<body>
+		<main>
+		<!-- ###################### HEADER ###################### -->
+
+		<header>
+			<div class="div_header">
+			<img 
+				src="img/logo_web_icone.svg"
+				alt="logo humanigme" 
+		        width="110"
+		        height="110"
+		        title="Logo Humanigme"
+		    />
+
+		    <h1>
+		    	Humanigme
+		    </h1>
+			</div>
+
+		<!-- ###################### NAVIGATION ###################### -->
+
+			<nav>
+				<div class="menu-btn" onclick="toggleMenu()">☰</div>
+				<ul>
+					<li> <a href="./index.html">Bienvenue !</a></li>
+					<li> <a href="./creations.html">Créations</a></li>
+					<li> <a href="./enigminsta.html">Enigm'Insta</a></li>
+					<li> <a href="./actualites.html">Actualités</a></li>
+					<li> <a href="./contact.html">Contact</a></li>
+					<li> <a href="./apropos.html">A propos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- ###################### article 1: Enigm'Insta ###################### -->
+
+		<article>
+			
+	      <h2>
+	        Enigm'Insta
+	      </h2>
+	      <section class="a1b1 a1b1img4">
+	      <p>
+	        <strong>Retrouvez</strong> ci-dessous toutes les énigmes publiées sur Instagram et <strong>testez en direct</strong> vos hypothèses avant de consulter la solution !
+	      </p>
+
+
+	      <ul>
+	        <li>Entrez simplement vos réponses dans les barres de recherche situées sous les images des énigmes.</li>
+	        <li>Les réponses doivent être écrites en <strong>minuscules et sans accents</strong>.</li>
+	      </ul>
+	      <ul>
+	        <li>Si votre réponse est <strong>correcte</strong>, le message suivant s’affichera : « Félicitations !!! », accompagné de l’explication du sens caché de l’énigme.</li>
+	        <li>Si votre réponse est <strong>incorrecte</strong>, le message suivant apparaîtra : <strong>Ce n'est pas la bonne réponse..!</strong></li>
+	      </ul>
+
+	      <p class="center">
+	        <b>Et maintenant, bonnes chances et amusez vous bien !!!!</b>
+	      </p>
+
+	      <p>
+	        Rendez-vous directement à l’énigme de votre choix : 
+	        
+	          <input type="number" id="choix" placeholder="Num° énigme">
+
+				<button type="button" onclick="allerVersEnigme()">
+				  Aller à l’énigme
+				</button>
+	      </p>
+	      
+	      </section class="a1b1">
+	      
+
+	      <!-- ###################### section 1: Enigm'Insta 1 ###################### -->
+
+	      <section id="enigme2" class="a1b1">
+	        <h3>
+	          <time datetime="2016-01-20">
+	            <strong>Enigme numéro 2 du 27 janvier 2016</strong>
+	          </time>
+	        </h3>
+
+	        <div class="img">
+	          <img 
+	            src="img/num2.svg" 
+	            alt="Enigme numéro 1" 
+	          />
+	        </div>
+
+	        <div class="bouton">
+			    <input type="text" id="reponse1" placeholder="Entrer votre réponse">
+			    <button onclick="tester(
+			      'reponse1',
+			      'joyeuse',
+			      'message1',
+			      'Bravo ! La solution est bien Joyeuse !.'
+			    )">
+			      Tester !
+			    </button>
+
+			    <div id="message1" class="solution_test"></div>
+			  </div>
+
+
+			<div>
+			  <button onclick="afficherTexte('texte1')">
+			    Afficher la solution !
+			  </button>
+
+			  <p id="texte1" class="solution">
+			    La solution est Joyeuse !
+			  </p>
+			</div>
+
+	      </section>
+
+	      <br>
+	      <!-- ###################### section 2: Enigm'Insta 2 ###################### -->
+
+	      <section id="enigme1" class="a1b1">
+	        <h3>
+	          <time datetime="2016-01-20">
+	            <strong>Enigme numéro 1 du 20 janvier 2016</strong>
+	          </time>
+	        </h3>
+
+	        <div class="img">
+	          <img 
+	            src="img/num1.svg" 
+	            alt="Enigme numéro 1" 
+	          />
+	        </div>
+
+	        <div class="bouton">
+			    <input type="text" id="reponse2" placeholder="Entrer votre réponse">
+			    <button onclick="tester(
+			      'reponse2',
+			      'pr',
+			      'message2',
+			      'Bravo ! La solution est bien prout !.'
+			    )">
+			      Tester !
+			    </button>
+
+			    <div id="message2" class="solution_test"></div>
+			  </div>
+
+
+			<div>
+			  <button onclick="afficherTexte('texte2')">
+			    Afficher la solution !
+			  </button>
+
+			  <p id="texte2" class="solution">
+			    Deuxième solution !
+			  </p>
+			</div>
+
+	      </section>
+
+	    </article>
+	</main>
+		<footer>
+	    	<h2>
+	    		<strong>A bientôt sur Humanigme !!!</strong>
+	    	</h2>
+	    </footer>
+	</body>
+</html>
