@@ -75,6 +75,7 @@
 	      </p>
 
 	      <p>
+	      	Deux énigmes sont actuellement disponibles !<br>
 	        Rendez-vous directement à l’énigme de votre choix : 
 	        
 	          <input type="number" id="choix" placeholder="Num° énigme">
@@ -86,23 +87,79 @@
 	      
 	      </section>
 	      
-	      <!-- ###################### section 2: Enigm'Insta 2 ###################### -->
+	      <!-- ###################### section 2: Enigm'Insta suivant ###################### -->
 
 	      <section id="enigme2" class="a1b1">
 	        <h3>
 	          <time datetime="2016-01-20">
-	            <strong>Enigme numéro 2</strong>
+	            <strong>Enigme numéro 3</strong>
 	          </time>
 	        </h3>
 
 
 	        <p>
-	        	L'énigme numéro 2 sera publiée dimanche prochain !<br><br>
+	        	L'énigme numéro 3 sera publiée dimanche prochain !<br><br>
 	        	A bientôt !!!
 	        </p>
 	        
 
 	      </section>
+
+	      	      <!-- ###################### section 1: Enigm'Insta 2 ###################### -->
+
+	      <section id="enigme2" class="a1b1">
+	        <h3>
+	          <time datetime="2026-06-21">
+	            <strong>Enigme numéro 2 du 21 juin 2026</strong>
+	          </time>
+	        </h3>
+
+	        <div class="img">
+	          <img 
+	            src="img/num2.svg" 
+	            alt="Enigme numéro 2" 
+	          />
+	        </div>
+
+	        	<p class="disclaimer">
+			  		/!\ Les réponses doivent être écrites en <strong>minuscules et sans accents</strong> et les espaces sont importants /!\
+			 	</p>
+
+	        <div class="bouton">
+	        	
+			    <input type="text" id="reponse2" placeholder="Entrer votre réponse">
+			    <button onclick="tester(
+			      'reponse2',
+			      '26746',
+			      'message2',
+			      'Bravo ! La solution est bien 26746 !'
+			    )">
+			      Tester !
+			    </button>
+
+			    <div id="message2" class="solution_test"></div>
+
+			  </div>
+
+
+
+			<div>
+			  <button onclick="afficherTexte('texte2')">
+			    Afficher la solution et l'explication !
+			  </button>
+
+			  <p id="texte2" class="solution">
+			    26746 est la surface agricole utilisée en France ! <br><br>
+
+				Cela représente presque la moitié de la surface du territoire !
+
+			  </p>
+			</div>
+
+	      </section>
+
+
+
 
 	      <!-- ###################### section 1: Enigm'Insta 1 ###################### -->
 
@@ -119,7 +176,9 @@
 	            alt="Enigme numéro 1" 
 	          />
 	        </div>
-
+	        	<p class="disclaimer">
+			  		/!\ Les réponses doivent être écrites en <strong>minuscules et sans accents</strong> et les espaces sont importants /!\
+			 	</p>
 	        <div class="bouton">
 	        	
 			    <input type="text" id="reponse1" placeholder="Entrer votre réponse">
@@ -133,9 +192,7 @@
 			    </button>
 
 			    <div id="message1" class="solution_test"></div>
-			    <p class="disclaimer">
-			  		/!\ Les réponses doivent être écrites en <strong>minuscules et sans accents</strong> et les espaces sont importants /!\
-			 	</p>
+
 			  </div>
 
 
@@ -156,47 +213,7 @@
 	      </section>
 
 	      <br>
-	      <!-- ###################### section 2: Enigm'Insta 2 ###################### -->
-	      <!--
-	      <section id="enigme1" class="a1b1">
-	        <h3>
-	          <time datetime="2016-01-20">
-	            <strong>Enigme numéro 1 du 20 janvier 2016</strong>
-	          </time>
-	        </h3>
-
-	        <div class="img">
-	          <img 
-	            src="img/num1.svg" 
-	            alt="Enigme numéro 1" 
-	          />
-	        </div>
-
-	        <div class="bouton">
-			    <input type="text" id="reponse2" placeholder="Entrer votre réponse">
-			    <button onclick="tester(
-			      'reponse2',
-			      'pr',
-			      'message2',
-			      'Bravo ! La solution est bien prout !.'
-			    )">
-			      Tester !
-			    </button>
-
-			    <div id="message2" class="solution_test"></div>
-			  </div>
-
-
-			<div>
-			  <button onclick="afficherTexte('texte2')">
-			    Afficher la solution !
-			  </button>
-
-			  <p id="texte2" class="solution">
-			    Deuxième solution !
-			  </p>
-			</div>
-			-->
+	      
 	      </section>
 
 	    </article>
