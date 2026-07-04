@@ -75,7 +75,7 @@
 	      </p>
 
 	      <p>
-	      	Deux énigmes sont actuellement disponibles !<br>
+	      	Quatre énigmes sont actuellement disponibles !<br>
 	        Rendez-vous directement à l’énigme de votre choix : 
 	        
 	          <input type="number" id="choix" placeholder="Num° énigme">
@@ -89,19 +89,77 @@
 	      
 	      <!-- ###################### section 2: Enigm'Insta suivant ###################### -->
 
-	      <section id="enigme4" class="a1b1">
+	      <section id="enigme5" class="a1b1">
 	        <h3>
-	            <strong>Enigme numéro 4</strong>
+	            <strong>Enigme numéro 5</strong>
 	        </h3>
 
 
 	        <p>
-	        	L'énigme numéro 4 sera publiée dimanche prochain !<br><br>
+	        	L'énigme numéro 5 sera publiée dimanche prochain !<br><br>
 	        	A bientôt !!!
 	        </p>
 	        
 
 	      </section>
+
+ 	      <!-- ###################### section 1: Enigm'Insta 4 ###################### -->
+
+	      <section id="enigme4" class="a1b1">
+	        <h3>
+	          <time datetime="2026-06-28">
+	            <strong>Enigme numéro 4 du 05 juillet 2026</strong>
+	          </time>
+	        </h3>
+
+	        <div class="img">
+	          <img 
+	            src="img/num4.svg" 
+	            alt="Enigme numéro 4" 
+	          />
+	        </div>
+
+	        	<p class="disclaimer">
+			  		/!\ Les réponses doivent être écrites en <strong>minuscules et sans accents</strong> et les espaces sont importants /!\
+			 	</p>
+
+	        <div class="bouton">
+	        	
+			    <input type="text" id="reponse4" placeholder="Entrer votre réponse">
+			    <button onclick="tester(
+			      'reponse4',
+			      'capside',
+			      'message4',
+			      'Bravo ! La solution est bien capside !'
+			    )">
+			      Tester !
+			    </button>
+
+			    <div id="message4" class="solution_test"></div>
+
+			  </div>
+
+
+
+			<div>
+			  <button onclick="afficherTexte('texte4')">
+			    Afficher la solution et l'explication !
+			  </button>
+
+			  <p id="texte4" class="solution">
+			  	La solution est <strong>capside</strong> !<br><br>
+
+			    Capside est le nom scientifique des protéines qui recouvrent le génome des virus pour le protéger et former des particules virales qui peuvent nous infecter !
+
+			  </p>
+			</div>
+
+	      </section>
+
+
+
+
+
 
 
 	      	      <!-- ###################### section 1: Enigm'Insta 3 ###################### -->
